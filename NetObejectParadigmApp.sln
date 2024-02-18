@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34607.119
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetObejectParadigmApp", "NetObejectParadigmApp\NetObejectParadigmApp.csproj", "{3269AA23-AF4E-43A6-9D17-4D36A9BE1122}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetOtherAssambleApp", "NetOtherAssambleApp\NetOtherAssambleApp.csproj", "{64CAAD5D-84D0-46B6-825C-79BB743AB1FC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3269AA23-AF4E-43A6-9D17-4D36A9BE1122}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3269AA23-AF4E-43A6-9D17-4D36A9BE1122}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3269AA23-AF4E-43A6-9D17-4D36A9BE1122}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3269AA23-AF4E-43A6-9D17-4D36A9BE1122}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64CAAD5D-84D0-46B6-825C-79BB743AB1FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64CAAD5D-84D0-46B6-825C-79BB743AB1FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64CAAD5D-84D0-46B6-825C-79BB743AB1FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64CAAD5D-84D0-46B6-825C-79BB743AB1FC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F2624844-DB08-498C-81AD-0C89F142263E}
+	EndGlobalSection
+EndGlobal
