@@ -6,28 +6,102 @@ using System.Threading.Tasks;
 
 namespace NetObejectParadigmApp
 {
-    public class Person
+    class Person
     {
-        //protected int id;
         public string? Name { get; set; }
         public int Age { get; set; }
-        //protected internal int Code { get; set; }
 
-        public Person()
+        public Person() : this("Anonim", 1) {}
+        public Person(string name) : this(name, 1) { }
+        public Person(int age) : this("Anonum", age) { }
+
+        public Person(string name, int age)
         {
-            this.Name = "Anonim";
-            this.Age = 1;
-            Console.WriteLine("Person is create");
+            this.Name = name;
+            this.Age = age;
+        }
+
+        public virtual void Print()
+        {
+            Console.Write($"Name: {Name}, Age: {Age}");
         }
     }
 
 
-    public class Student : Person
+    class Employee : Person
     {
-        public Student()
+        public string? Company { set; get; }
+
+        public Employee() : base("Anonim", 0)
         {
-            this.Name = "Student";
-            Console.WriteLine("Student is create");
+            Company = "NoWork";
+        }
+
+        public Employee(string name, int age, string company)
+            : base(name, age)
+        {
+            Company = company;
+        }
+
+        public override void Print()
+        {
+            base.Print();
+            Console.Write($", Company: {Company}");
+        }
+    }
+
+    class Client : Person
+    {
+        public string? Bank { set; get; }
+
+        public Client(string name, int age, string? bank)
+            : base(name, age)
+        {
+            Bank = bank;
+        }
+
+        public override sealed void Print()
+        {
+            base.Print();
+            Console.Write($", Bank: {Bank}");
+        }
+    }
+
+    class Student
+    {
+
+    }
+
+
+    abstract class Shape
+    {
+        public abstract int X {  set; get; }
+        public int Y {  set; get; }
+
+        public Shape() { }
+        public Shape(int x, int y)
+        {
+            X = x;
+            Y = y;
+        }
+
+        public abstract double Perimetr();
+    }
+
+    class Circle : Shape
+    {
+        public int Radius { set; get; }
+        public override int X { get; set; }
+
+        public Circle() { }
+        public Circle(int x, int y, int radius) : base(x, y)
+        { 
+            Radius = radius;
+        }
+
+        public override double Perimetr()
+        {
+            return 2 * Math.PI * Radius;
         }
     }
 }
